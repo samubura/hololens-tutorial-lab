@@ -891,6 +891,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6217502574294293850, guid: 44ff2ee01a6f77544abe100f590769b8, type: 3}
+  colorList:
+  - {fileID: 2100000, guid: 84d2b4a79e1920b44a1ce034260d7e04, type: 2}
+  - {fileID: 2100000, guid: cafb0fedd48e7194cb459ef55de689c2, type: 2}
+  - {fileID: 2100000, guid: 2be54e1da48c5ce4e93105b628fc610b, type: 2}
+  - {fileID: 2100000, guid: 52d63a89059be8c4cbb29053778c9051, type: 2}
 --- !u!1001 &6217502573916281544
 PrefabInstance:
   m_ObjectHideFlags: 0
