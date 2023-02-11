@@ -7,8 +7,18 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject prefab;
 
+    [SerializeField]
+    private List<Material> colorList;
+
+    private int i = 0;
+
     public void NewCube()
     {
-        GameObject.Instantiate(prefab, this.transform.position, Quaternion.identity);
+        var newCube = GameObject.Instantiate(prefab, this.transform.position, Quaternion.identity);
+        newCube.GetComponent<Renderer>().material = colorList[i];
+        i = (i+1) % colorList.Count;
+
+        Debug.Log(colorList.Count);
+        Debug.Log(i);
     }
 }
