@@ -16,7 +16,6 @@ public class RotateBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         this.gameObject.transform.Rotate(angles*Time.deltaTime, Space.Self);
     }
 }
