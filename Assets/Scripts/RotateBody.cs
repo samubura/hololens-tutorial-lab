@@ -6,8 +6,7 @@ public class RotateBody : MonoBehaviour
 {
     [SerializeField]
     private Vector3 angles = new Vector3(45.0f, 0, 0);
-    [SerializeField]
-    private bool rotate = true;
+    public bool Rotate { get; set; } = true;
 
     private Rigidbody _body;
     // Start is called before the first frame update
@@ -19,8 +18,8 @@ public class RotateBody : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _body.freezeRotation = rotate;
-        if (rotate)
+        _body.freezeRotation = Rotate;
+        if (Rotate)
         {
             this.transform.Rotate(angles * Time.deltaTime);
         }
