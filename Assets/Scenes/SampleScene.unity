@@ -736,18 +736,18 @@ PrefabInstance:
     - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763, type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1953084859}
+      objectReference: {fileID: 1953084860}
     - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763, type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763, type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: NewCube
+      value: NewFood
       objectReference: {fileID: 0}
     - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763, type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: Spawner, Assembly-CSharp
+      value: SpawnFood, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2975148661001560990, guid: 4f44c0d070528944c9bff425c6932763, type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
@@ -856,7 +856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953084858}
-  - component: {fileID: 1953084859}
+  - component: {fileID: 1953084860}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -878,7 +878,7 @@ Transform:
   m_Father: {fileID: 1660658817}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1953084859
+--- !u!114 &1953084860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -887,15 +887,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1953084857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f80b47d5fbd2a0e4dadeb90e4a48eecf, type: 3}
+  m_Script: {fileID: 11500000, guid: f16a9ad312027e84585fcdf79629f83f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6217502574294293850, guid: 44ff2ee01a6f77544abe100f590769b8, type: 3}
-  colorList:
-  - {fileID: 2100000, guid: 84d2b4a79e1920b44a1ce034260d7e04, type: 2}
-  - {fileID: 2100000, guid: cafb0fedd48e7194cb459ef55de689c2, type: 2}
-  - {fileID: 2100000, guid: 2be54e1da48c5ce4e93105b628fc610b, type: 2}
-  - {fileID: 2100000, guid: 52d63a89059be8c4cbb29053778c9051, type: 2}
+  prefabs:
+  - {fileID: 6370115497481938426, guid: 62dd0b4a0c68fc14ba9f2f4c6bd0a48f, type: 3}
+  - {fileID: 7613035734659246186, guid: af028782ecacef7449bc0814388a20e8, type: 3}
+  - {fileID: 1315737388349721819, guid: 43b991aed259c0a43b74574969730e0b, type: 3}
+  - {fileID: 6797904639103543773, guid: 3a456bb19ded7ad4b833aa16c70738a5, type: 3}
+  - {fileID: 2891937688605427148, guid: de82b0b4fd7bdc846aada6a8c760c9f1, type: 3}
+  - {fileID: 179914892737000288, guid: 1ac813c41749bac419f3d0cc6bbc40f2, type: 3}
 --- !u!1001 &6217502573916281544
 PrefabInstance:
   m_ObjectHideFlags: 0

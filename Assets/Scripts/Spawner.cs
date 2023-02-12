@@ -17,8 +17,5 @@ public class Spawner : MonoBehaviour
         var newCube = GameObject.Instantiate(prefab, this.transform.position, Quaternion.identity);
         newCube.GetComponent<Renderer>().material = colorList[i];
         i = (i+1) % colorList.Count;
-
-        Debug.Log(colorList.Count);
-        Debug.Log(i);
     }
 }
